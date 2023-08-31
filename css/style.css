@@ -51,6 +51,15 @@ main{
   width: 100%;
 }
 
+.my_btn{
+  background-color: transparent;
+}
+
+.my_btn:hover{
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 /* *****************************************************MAIN_RIGHT */
 
 .main_right{

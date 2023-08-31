@@ -8,23 +8,36 @@
 
 header{
   height: 70px;
+  background-color: #f8f9fa;
 }
 
 /* ******************************************************************** MAIN */
 
 main{
-  margin-top: 70px;
+  height: 100vh;
 }
 
 /* ******************************************************MAIN_LEFT */
 
 .main_left{
   width: 150px;
+  background-color: #051e34;
+}
+
+.top_hidden{
+  height: 67px;
+  background-color: aliceblue;
+}
+
+.left{
+  height:calc(100vh - 69px);
+  background-image: url(../img/sidebar-bg.png);
 }
 
 /* *****************************************************MAIN_RIGHT */
 
 .main_right{
+  margin-top: 70px;
   width: calc(100% - 150px);
   overflow-y: auto;
 }

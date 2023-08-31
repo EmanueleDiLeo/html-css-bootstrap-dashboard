@@ -4,6 +4,14 @@
   border: 1px solid rgba(255, 0, 0, 0.5);
 }
 
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
 /* ****************************************************************** HEADER */
 
 header{
@@ -14,30 +22,39 @@ header{
 /* ******************************************************************** MAIN */
 
 main{
-  height: 100vh;
+  margin-top: 70px;
+  height:calc(100vh - 70px);
 }
 
 /* ******************************************************MAIN_LEFT */
 
 .main_left{
-  width: 150px;
+  height: 100%;
+  width: 70px;
+  /* width: 150px; per desktop */
+  background-image: url(../img/sidebar-bg.png);
   background-color: #051e34;
 }
 
-.top_hidden{
-  height: 67px;
-  background-color: aliceblue;
+.main_left a{
+  color: white;
 }
 
-.left{
-  height:calc(100vh - 69px);
-  background-image: url(../img/sidebar-bg.png);
+.left-top{
+  width: 100%;
+}
+
+.left-top ul{
+  padding: 0;
+}
+
+.left-bot{
+  width: 100%;
 }
 
 /* *****************************************************MAIN_RIGHT */
 
 .main_right{
-  margin-top: 70px;
-  width: calc(100% - 150px);
+  width: calc(100% - 70px);
   overflow-y: auto;
 }

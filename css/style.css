@@ -31,7 +31,6 @@ main{
 .main_left{
   height: 100%;
   width: 70px;
-  /* width: 150px; per desktop */
   background-image: url(../img/sidebar-bg.png);
   background-color: #051e34;
 }
@@ -57,4 +56,16 @@ main{
 .main_right{
   width: calc(100% - 70px);
   overflow-y: auto;
+}
+
+/***************************************************************** RESPONSIVE */
+
+@media screen and (min-width:992px){
+  .main_left{
+    width: 150px;
+  }
+
+  .main_right{
+    width: calc(100% - 150px);
+  }
 }

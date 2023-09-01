@@ -166,6 +166,32 @@ main{
   background-color: #11458d;
 }
 
+/* ***************************************** CONTAINER CENTER */
+
+table img{
+  width: 35px;
+}
+
+.btn-table{
+  font-size: 0.8rem;
+  border: none;
+  padding: 0px 4px;
+  border-radius: 8px;
+}
+
+.my-warning{
+  background-color: #ff8f00;
+}
+
+.btn-util{
+  color: #6c757d;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+}
+
+
 /***************************************************************** RESPONSIVE */
 
 @media screen and (min-width:992px){
@@ -177,7 +203,12 @@ main{
     width: calc(100% - 150px);
   }
 
+}
+
+@media screen and (min-width:1200px){
+
   .offcanvas.offcanvas-big{
     width: 50%;
-  }
+  } 
+  
 }

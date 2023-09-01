@@ -125,6 +125,23 @@ main{
   overflow-y: auto;
 }
 
+/* ******************************************** JUMBO */
+
+.jumbo{
+  background-color: #1A72E8;
+  color: white;
+}
+
+.plus{
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+}
+
+.offcanvas.offcanvas-big{
+  width: 100%;
+}
+
 /***************************************************************** RESPONSIVE */
 
 @media screen and (min-width:992px){
@@ -134,5 +151,9 @@ main{
 
   .main_right{
     width: calc(100% - 150px);
+  }
+
+  .offcanvas.offcanvas-big{
+    width: 50%;
   }
 }

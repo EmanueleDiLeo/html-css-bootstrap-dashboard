@@ -25,7 +25,7 @@ header{
   width: 100%;
   height: 50px;
   margin: 10px 0;
-  background-color: aqua;
+  background-color: white;
 }
 
 /********************************************************* LOGO */
@@ -133,13 +133,37 @@ main{
 }
 
 .plus{
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border: 2px solid white;
+  border-radius: 5px;
+}
+
+.plus:hover{
+  background-color: white;
+  color: black;
 }
 
 .offcanvas.offcanvas-big{
   width: 100%;
+}
+
+.boolean-btn{
+  border: none;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  background-color: #165bba;
+  color: white;
+  border-radius: 15px;
+}
+
+.boolean-btn.p-plus{
+  padding: 4px 9px;
+  border-radius: 50%;
+}
+
+.boolean-btn:hover{
+  background-color: #11458d;
 }
 
 /***************************************************************** RESPONSIVE */

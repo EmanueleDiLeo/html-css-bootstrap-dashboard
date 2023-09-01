@@ -15,7 +15,7 @@
 <body>
 
   <!-- START HEADER -->
-  <header class="fixed-top debug">
+  <header class="fixed-top">
     <div class="container-fluid my_container d-flex justify-content-between
       align-items-center">
 
@@ -137,25 +137,33 @@
 
 
     <!-- START MAIN_RIGHT -->
-    <section class="main_right debug">
+    <section class="main_right">
       
       <!-- START JUMBO -->
       <div class="jumbo">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-12 col-lg-4 order-lg-3 py-5">
+
+            <!-- START COL NEW STUDENT -->
+            <div class="col-12 col-lg-4 order-lg-3 col-xl-2 py-3">
               <span class="pe-4">Nuovo Studente</span>
 
-
-
-              <button class=" navbar-toggler btn plus" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <!-- START BUTTON PLUS -->
+              <button class=" navbar-toggler btn plus" 
+              type="button" 
+              data-bs-toggle="offcanvas" 
+              data-bs-target="#offcanvasNavbar" 
+              aria-controls="offcanvasNavbar" 
+              aria-label="Toggle navigation">
                 <span class="fa-solid fa-plus"></span>
               </button>
+              <!-- END BUTTON PLUS -->
 
-
-
+              <!-- START OFFCANVAS -->
               <div class="offcanvas offcanvas-end offcanvas-big" 
               tabindex="" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                <!-- START TITLE AND CLOSE -->
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                     Inserisci un nuovo studente
@@ -164,11 +172,19 @@
                   data-bs-dismiss="offcanvas" aria-label="Close">
                   </button>
                 </div>
+                <!-- END TITLE AND CLOSE -->
+
+
+                <!-- START OFFCANVAS BODY -->
                 <div class="offcanvas-body">
 
+                  <!-- START FORM -->
                   <form action="#" method="POST">
+
+                    <!-- START ROW-->
                     <div class="row px-1 ">
 
+                      <!-- START COL NAME-->
                       <div class="col-12 col-lg-6 p-2">
                         <label for="name">Nome</label>
                         <input type="text" 
@@ -177,7 +193,9 @@
                         name="name" 
                         placeholder="Nome" required>
                       </div>
+                      <!-- END COL NAME-->
                       
+                      <!-- START COL LASTNAME-->
                       <div class="col-12 col-lg-6 p-2">
                         <label for="lastname">Cognome</label>
                         <input type="text" 
@@ -186,7 +204,9 @@
                         name="lastname" 
                         placeholder="Cognome">
                       </div>
+                      <!-- END COL LASTNAME-->
 
+                      <!-- START COL EMAIL-->
                       <div class="col-12 col-lg-6 p-2">
                         <label for="email">Email</label>
                         <div class="input-group">
@@ -198,7 +218,9 @@
                           aria-describedby="basic-addon1">
                         </div>
                       </div>
+                      <!-- END COL EMAIL-->
 
+                      <!-- START COL PASSWORD-->
                       <div class="col-12 col-lg-6 p-2">
                         <label for="password">Password</label>
                         <input type="password" 
@@ -207,7 +229,9 @@
                         name="password" 
                         placeholder="Password">
                       </div>
+                      <!-- END COL PASSWORD-->
 
+                      <!-- START COL EMAIL-->
                       <div class="col-12 col-lg-6 p-2">
                         <label for="email">Email</label>
                         <div class="input-group">
@@ -219,7 +243,9 @@
                           aria-describedby="basic-addon1">
                         </div>
                       </div>
+                      <!-- END COL EMAIL-->
 
+                      <!-- START COL PASSWORD-->
                       <div class="col-12 col-lg-6 p-2">
                         <label for="Password">Password</label>
                         <input type="password" 
@@ -228,7 +254,9 @@
                         name="password" 
                         placeholder="Password">
                       </div>
+                      <!-- END COL PASSWORD-->
 
+                      <!-- START COL ADDRESS-->
                       <div class="col-12 p-2">
                         <label for="indirizzo">Indirizzo</label>
                         <input type="text" 
@@ -236,7 +264,9 @@
                         id="" name="Indirizzo" 
                         placeholder="Indirizzo" required>
                       </div>
+                      <!-- END COL ADDRESS-->
 
+                      <!-- START COL CITTA-->
                       <div class="col-12 col-lg-6 p-2">
                         <label for="citta">Città</label>
                         <input type="text" 
@@ -244,7 +274,9 @@
                         id="" name="citta" 
                         placeholder="Città" required>
                       </div>
+                      <!-- END COL CITTA-->
 
+                      <!-- START COL STATO-->
                       <div class="col-12 col-lg-4 p-2">
                         <label for="nation">Stato</label>
                         <select class="form-control" name="nation" id="nation">
@@ -256,16 +288,20 @@
                           <option value="5">Spain</option>
                         </select>
                       </div>
+                      <!-- END COL STATO-->
 
+                      <!-- START COL CAP-->
                       <div class="col-12 col-lg-2 p-2">
-                        <label for="citta">Città</label>
+                        <label for="cap">CAP</label>
                         <input type="text" 
                         class="form-control" 
                         id="" 
-                        name="citta" 
-                        placeholder="Città" required>
+                        name="cap" 
+                        placeholder="CAP" required>
                       </div>
+                      <!-- END COL CAP-->
 
+                      <!-- START COL FOTO-->
                       <div class="col-12 p-2">
                         <label for="formFileMultiple" class="form-label">
                           Foto
@@ -274,7 +310,9 @@
                         type="file" 
                         id="formFileMultiple" multiple>
                       </div>
+                      <!-- END COL FOTO-->
 
+                      <!-- START COL CHECK-->
                       <div class="col-12 form-check m-3">
                         <input 
                         class="form-check-input" 
@@ -283,7 +321,9 @@
                           Seleziona per proseguire
                         </label>
                       </div>
+                      <!-- END COL CHECK-->
 
+                      <!-- START COL BUTTON-->
                       <div class="col-auto m-2">
                         <button type="submit" class="btn btn-primary mb-3">
                           Salva
@@ -292,21 +332,71 @@
                           Svuota
                         </button>
                       </div>
-
-                      
-
+                      <!-- END COL BUTTON-->
 
                     </div>
+                    <!-- END ROW-->
+
                   </form>
+                  <!-- END FORM -->
 
                 </div>
+                <!-- END OFFCANVAS BODY -->
+
               </div>
-
-
+              <!-- END OFFCANVAS -->
 
             </div>
-            <div class="col-12 col-lg-4 py-5">text2</div>
-            <div class="col-12 col-lg-4 py-5">text3</div>
+            <!-- END COL NEW STUDENT -->
+
+            <!-- START COL BOOLEAN -->
+            <div class="col-12 col-lg-4 col-xl-6 py-3">
+
+              <!-- START TOP BUTTON  -->
+              <div class="">
+                <h2 class="d-inline-block pe-2">Boolean</h2>
+                <button type="button" class="boolean-btn">
+                  Piano blaze
+                </button>
+              </div>
+               <!-- START TOP BUTTON  -->
+
+              <!-- START BUTTON BOT -->
+              <div>
+                <button type="button" class=" boolean-btn">
+                  3 app
+                </button>
+
+                <span class="fa-solid fa-angles-right"></span>
+
+                <button type="button" class="d-xl-none boolean-btn p-plus">
+                  <span class="fa-solid fa-plus"></span>
+                </button>
+
+                <button type="button" class="d-none d-xl-inline boolean-btn">
+                  Boolean mobile app
+                </button>
+
+                <button type="button" class="d-none d-xl-inline boolean-btn">
+                  Boolean web app
+                </button>
+
+                <button type="button" class="d-none d-xl-inline boolean-btn">
+                  Boolean blog app
+                </button>
+              </div>
+              <!-- END BUTTON BOT -->
+
+            </div>
+            <!-- END COL BOOLEAN -->
+
+            <!-- START COL TEXT -->
+            <div class="col-12 col-lg-4 py-3">
+              <span>Studenti online negli ultimi 30 minuti</span>
+              <h2 class="pt-2">125</h2>
+            </div>
+            <!-- END COL TEXT -->
+
           </div>
         </div>
       </div>

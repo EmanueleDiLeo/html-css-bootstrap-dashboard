@@ -180,7 +180,11 @@ table img{
 }
 
 .my-warning{
-  background-color: #ff8f00;
+  background-color: #ffc107;
+}
+
+.my-warning:hover{
+  background-color: #eeb405;
 }
 
 .btn-util{
